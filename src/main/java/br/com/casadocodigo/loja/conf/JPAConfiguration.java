@@ -43,7 +43,7 @@ public class JPAConfiguration {
 
 	}
 
-
+    
 	@Bean
 	public JpaTransactionManager transactionManager(EntityManagerFactory emf){
 		return new JpaTransactionManager(emf);

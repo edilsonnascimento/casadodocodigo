@@ -9,7 +9,6 @@ public class HomeController{
 	
 	@RequestMapping("/")
 	public String index() {
-		System.out.println("BEM VINDO AO CDC");
 		return "home";
 	}
 }
