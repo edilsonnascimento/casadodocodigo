@@ -33,7 +33,7 @@ public class ProdutosController {
 	@RequestMapping(method=RequestMethod.POST)
 	public ModelAndView gravar(Produto produto, RedirectAttributes redirectAttributes) {
 		
-		System.out.println(produto);
+		
 		produtoDao.gravar(produto);
 		
 		redirectAttributes.addFlashAttribute("sucesso", "Produto Cadasrado com Sucesso !");
