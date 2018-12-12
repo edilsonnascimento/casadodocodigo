@@ -20,7 +20,7 @@ import br.com.casadocodigo.loja.models.TipoPreco;
 import br.com.casadocodigo.loja.validation.ProdutoValidation;
 
 @Controller
-@RequestMapping("produtos")
+@RequestMapping("/produtos")
 public class ProdutosController {
 	
 	
@@ -33,7 +33,7 @@ public class ProdutosController {
 		binder.addValidators(new ProdutoValidation());
 	}
 	
-	@RequestMapping("/form")
+	@RequestMapping("form")
     public ModelAndView form(){
 
         ModelAndView modelAndView = new ModelAndView("produtos/form");
@@ -45,8 +45,6 @@ public class ProdutosController {
 	@RequestMapping(method=RequestMethod.POST)
 	public ModelAndView gravar(@Valid Produto produto, BindingResult result, RedirectAttributes redirectAttributes) {
 		
-		System.out.println("METODO GRAVAR INICIO");
-		
 		if(result.hasErrors()) {
 			return form();
 		}		
@@ -56,7 +54,6 @@ public class ProdutosController {
 		
 		redirectAttributes.addFlashAttribute("sucesso", "Produto Cadasrado com Sucesso !");
 		
-		System.out.println("METODO GRAVAR FIM ");
 		return new ModelAndView("redirect:produtos");
 	}
 	
