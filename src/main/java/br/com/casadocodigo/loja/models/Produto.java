@@ -3,6 +3,7 @@ package br.com.casadocodigo.loja.models;
 import java.util.Calendar;
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,6 +19,7 @@ public class Produto {
 	private Integer id;
 	
 	private String titulo;
+	@Column(columnDefinition = "TEXT")
 	private String descricao;
 	private Integer paginas;
 	
@@ -40,7 +42,6 @@ public class Produto {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	
 	public Integer getId() {
 		return id;
 	}
