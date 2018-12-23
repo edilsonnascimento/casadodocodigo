@@ -13,7 +13,8 @@
 <body>
 	<h1>Lista de Produtos</h1>
 	
-	<p>Produto cadastrado com SUCESSO!</p>
+	<p>${sucesso}</p>
+	<p>${falha}</p>
 	
 	<table>
 		<tr>
