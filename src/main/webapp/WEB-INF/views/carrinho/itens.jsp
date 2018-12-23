@@ -327,7 +327,7 @@
 	</div>
 </header>
 	<main>
-		<p class="destaqueDoCupom">Use o cÃ³digo 
+		<p class="destaqueDoCupom">Use o Código 
 			<strong class="destaqueDoCupom-codigo"></strong> e tenha 
 			<strong class="destaqueDoCupom-desconto">10%</strong> de desconto!
   			<button class="destaqueDoCupom-remover" title="Remover banner" onclick="removeDiscountBanner()"><?xml version="1.0" encoding="iso-8859-1"?>
@@ -347,7 +347,6 @@
 	  </p>
 	  <section class="infoSection container">
 	  <h2 class="infoSection-titulo">Seu carrinho</h2>	  
-	  <form class="formularioDoCarrinho" action="/cart" method="post">
 	  	<table class="formularioDoCarrinho-tabela">
 			<thead class="formularioDoCarrinho-cabecalho">
 				<tr>
@@ -381,7 +380,7 @@
 						</td>
 						<td class="formularioDoCarrinho-item formularioDoCarrinho-item-precoTotal" title="${carrinhoCompras.getTotal(item)}">${ carrinhoCompras.getTotal(item)}</td>
 						<td class="formularioDoCarrinho-item">
-						    <form class="formularioDoCarrinho" action="" method="post">
+						    <form class="formularioDoCarrinho" action="${s:mvcUrl('CCC#remover').arg(0, item.produto.id).arg(1,item.tipo).build()}" method="post">
 	                        	<input type = "image" src="//cdn.shopify.com/s/files/1/0155/7645/t/232/assets/trash.png?5355844097266431448" alt="X" title="Remover"/>          									
 						    </form>
 						</td>
@@ -391,7 +390,9 @@
 		<tfoot class="formularioDoCarrinho-rodape">
 			<tr>
 				<td class="formularioDoCarrinho-rodape-item formularioDoCarrinho-finalizar" colspan="3">
-					<button class="formularioDoCarrinho-finalizar-botao" type="submit" name="checkout">Finalizar<span class="formularioDoCarrinho-finalizar-botao-texto" role="presentation"> compra</span></button>
+					<form action="${s:mvcUrl('PC#finalizar').build()}" method="post">
+						<button class="formularioDoCarrinho-finalizar-botao" type="submit" name="checkout">Finalizar<span class="formularioDoCarrinho-finalizar-botao-texto" role="presentation"> compra</span></button>
+					</form>
 				</td>
 				<td class="formularioDoCarrinho-rodape-item">
 					<button class="formularioDoCarrinho-atualizar" type="submit" class="update-cart" name="update">Atualizar</button>
@@ -403,15 +404,14 @@
 			</tr>
 		</tfoot>
 	</table>
-</form>
+    <a class="rodape-itemLink" href="${s:mvcUrl('PC#listar').build()}" > Voltar a lista de livros da Casa do Código</a>	
 </section>
 		<div class="buscaDoRodape container" role="presentation">
 	<form role="search"
 		  aria-labelledby="rotuloBuscaDoRodape"
 		  action="/search"
 		  method="GET"
-		  class="buscaDoRodape-formulario"
-	>
+		  class="buscaDoRodape-formulario">
 		<label id="rotuloBuscaRodape" class="buscaDoRodape-rotuloEscondido" for="campoBuscaRodape">Busque por autor, tÃ­tulo, conteÃºdo...</label>
 		<label class="buscaDoRodape-rotulo" for="campoBuscaRodape">NÃ£o encontrou o seu livro?</label>
 		<fieldset class="buscaDoRodape-fieldset">
@@ -435,7 +435,7 @@
 	<div class="container" role="presentation">
 		<div class="rodape-conteudo" role="presentation">
 			<section class="rodape-secao rodape-voltarTopo">
-				<a class="rodape-logo" href="#" title="Voltar ao topo da pÃ¡gina">
+				<a class="rodape-logo" href="#" title="Voltar ao topo da página">
 				<img src="//cdn.shopify.com/s/files/1/0155/7645/t/232/assets/logo-footer.svg?5355844097266431448" alt="altLogoFooter"/>
 				</a>
 			</section>
@@ -609,7 +609,7 @@
 
 
 <!-- Get Clicked SEO for Shopify -->
-<!-- Created by Adolab [ https://adolab.com ] --><script type="application/ld+json">{"@context": "https://schema.org","@type": "WebSite","url": "https://www.casadocodigo.com.br","name": "Casa do Codigo","potentialAction": {"@type": "SearchAction","target": "https://www.casadocodigo.com.br/search?q={query}","query-input": "required name=query"}}</script><script type="application/ld+json">{"@context": "https://schema.org","@type": "Organization","name": "Casa do Codigo","url": "https://www.casadocodigo.com.br","description": "Casa do CÃ³digo Ã© uma editora feita de programadores para programadores. Android, iOS, Web Design Responsivo, HTML, Startups, Java e mais","telephone": "55 11 83358085","logo": "https://cdn.shopify.com/s/files/1/0155/7645/t/232/assets/logo.png?5355844097266431448","image": "https://cdn.shopify.com/s/files/1/0155/7645/t/232/assets/logo.png?5355844097266431448","sameAs": [],"address": {"@type": "PostalAddress","streetAddress": "R Francisco Cruz 448 ap 102","addressLocality": "SÃ£o Paulo","addressRegion": "SÃ£o Paulo","postalCode": "04117091","addressCountry": "Brasil"}}</script>
+<!-- Created by Adolab [ https://adolab.com ] --><script type="application/ld+json">{"@context": "https://schema.org","@type": "WebSite","url": "https://www.casadocodigo.com.br","name": "Casa do Codigo","potentialAction": {"@type": "SearchAction","target": "https://www.casadocodigo.com.br/search?q={query}","query-input": "required name=query"}}</script><script type="application/ld+json">{"@context": "https://schema.org","@type": "Organization","name": "Casa do Codigo","url": "https://www.casadocodigo.com.br","description": "Casa do Código é uma editora feita de programadores para programadores. Android, iOS, Web Design Responsivo, HTML, Startups, Java e mais","telephone": "55 11 83358085","logo": "https://cdn.shopify.com/s/files/1/0155/7645/t/232/assets/logo.png?5355844097266431448","image": "https://cdn.shopify.com/s/files/1/0155/7645/t/232/assets/logo.png?5355844097266431448","sameAs": [],"address": {"@type": "PostalAddress","streetAddress": "R Francisco Cruz 448 ap 102","addressLocality": "SÃ£o Paulo","addressRegion": "São Paulo","postalCode": "04117091","addressCountry": "Brasil"}}</script>
 <!-- End Get Clicked SEO for Shopify -->
 
 
