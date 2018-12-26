@@ -151,198 +151,54 @@
 			</svg>
 		</a>
 	</h1>
-
+    
 	<div id="navegacaoCabecalho" class="cabecalhoPrincipal-navegacao">
 		<div class="cabecalhoPrincipal-categoriasEBusca" role="presentation">
 			<nav role="navigation" aria-label="Categorias de livros" class="colecoesDaCDC">
 					<li class="colecoesDaCDC-colecaoItem">
-						<a href="/collections/livros-de-programacao" class="colecoesDaCDC-colecaoLink colecoesDaCDC-colecaoLink--comSubColecao">
+						<a href="#" class="colecoesDaCDC-colecaoLink colecoesDaCDC-colecaoLink--comSubColecao">
 							Programação
 						</a>
-						<nav class="colecoesDaCDC-colecaoItem-subColecoes">
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/programacao-logica">Lógica</a>
-								</li>
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/programacao-java">Java</a>
-								</li>
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/programacao-net">.NET</a>
-								</li>
-							
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/programacao-games">Games</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/programacao-oo">OO</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/programacao-funcional">Funcional</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/programacao-outros">Outros</a>
-								</li>
-							
-							<li class="colecaoItem-subColecoes-item">
-								<a href="/collections/livros-de-programacao">Todos</a>
-							</li>
-						</nav>
-						
 					</li>
 
 					<li class="colecoesDaCDC-colecaoItem">
-						<a href="/collections/livros-de-mobile" class="colecoesDaCDC-colecaoLink colecoesDaCDC-colecaoLink--comSubColecao">
+						<a href="#" class="colecoesDaCDC-colecaoLink colecoesDaCDC-colecaoLink--comSubColecao">
 							Mobile
 						</a>
-						
-						<nav class="colecoesDaCDC-colecaoItem-subColecoes">
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/mobile-ios">iOS</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/mobile-android">Android</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/mobile-multiplataforma">Multiplataforma</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/mobile-outros">Outros</a>
-								</li>
-							
-							<li class="colecaoItem-subColecoes-item">
-								<a href="/collections/livros-de-mobile">Todos</a>
-							</li>
-						</nav>
-						
 					</li>
 
 					<li class="colecoesDaCDC-colecaoItem">
-						<a href="/collections/livros-de-front-end" class="colecoesDaCDC-colecaoLink colecoesDaCDC-colecaoLink--comSubColecao">
+						<a href="#" class="colecoesDaCDC-colecaoLink colecoesDaCDC-colecaoLink--comSubColecao">
 							Front-end
 						</a>
 						
-						<nav class="colecoesDaCDC-colecaoItem-subColecoes">
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/front-end-html-e-css">HTML e CSS</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/front-end-javascript">JavaScript</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/front-end-outros">Outros</a>
-								</li>
-							
-							<li class="colecaoItem-subColecoes-item">
-								<a href="/collections/livros-de-front-end">Todos</a>
-							</li>
-						</nav>
-						
+					</li>
+			
+					<li class="colecoesDaCDC-colecaoItem">
+						<a href="${s:mvcUrl('PC#listar').build()}" class="colecoesDaCDC-colecaoLink">
+							Listar Produtos
+						</a>
 					</li>
 					
 					<li class="colecoesDaCDC-colecaoItem">
-						<a href="/collections/livros-de-infraestrutura" class="colecoesDaCDC-colecaoLink colecoesDaCDC-colecaoLink--comSubColecao">
-							Infraestrutura
+						<a href="${s:mvcUrl('PC#form').build()}" class="colecoesDaCDC-colecaoLink ">
+							Cadastrar Produto
 						</a>
-						
-						<nav class="colecoesDaCDC-colecaoItem-subColecoes">
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/infraestrutura-web">Web</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/infraestrutura-dados">Dados</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/infraestrutura-outros">Outros</a>
-								</li>
-							
-							<li class="colecaoItem-subColecoes-item">
-								<a href="/collections/livros-de-infraestrutura">Todos</a>
-							</li>
-						</nav>
-						
-					</li>
-
-					<li class="colecoesDaCDC-colecaoItem">
-						<a href="/collections/livros-de-business" class="colecoesDaCDC-colecaoLink colecoesDaCDC-colecaoLink--comSubColecao">
-							Business
-						</a>
-						
-						<nav class="colecoesDaCDC-colecaoItem-subColecoes">
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/business-startups">Startups</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/business-marketing-digital">Marketing Digital</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/business-gestao">Gestão</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/business-agile">Agile</a>
-								</li>
-							
-								<li class="colecaoItem-subColecoes-item">
-									<a href="/collections/business-outros">Outros</a>
-								</li>
-							
-							<li class="colecaoItem-subColecoes-item">
-								<a href="/collections/livros-de-business">Todos</a>
-							</li>
-						</nav>
-						
-					</li>
-					
-					<li class="colecoesDaCDC-colecaoItem">
-						<a href="/collections/design-e-ux" class="colecoesDaCDC-colecaoLink ">
-							Design & UX
-						</a>
-						
 					</li>
 			</nav>
-			<form role="search"
-				  aria-labelledby="rotuloBuscaPrincipal"
-				  action="/search"
-				  method="GET"
-				  class="buscaPrincipal">
+			<form role="search" aria-labelledby="rotuloBuscaPrincipal" action="/search" method="GET" class="buscaPrincipal">
 				<label id="rotuloBuscaPrincipal" class="buscaPrincipal-label" for="campoBuscaPrincipal">
 					Busque por autor, título, conteúdo...
 				</label>
 				<input type="hidden" name="type" value="product">
-				<input id="campoBuscaPrincipal"
-				       class="buscaPrincipal-campo"
-				       placeholder="O que procura?"
-					   type="search"
-					   name="q"
-					   required
-					   aria-required
-				><!-- 
-			 --><button class="buscaPrincipal-submit" type="submit" title="buscar"></button>
+				<input id="campoBuscaPrincipal" class="buscaPrincipal-campo" placeholder="O que procura?" type="search" name="q" required aria-required>
+			    <button class="buscaPrincipal-submit" type="submit" title="buscar"></button>
 			</form>
 		</div>
-
 		<a tabindex="3" href="/cart" title="Ir para sacola de compras" class="sacola cabecalhoPrincipal-itemNavegacao">
 			<svg width="60px" height="24px" viewBox="0 0 60 24" role="img" aria-labelledby="sacolaLabel" class="sacola-icone">
 				<title id="sacolaLabel">
-					Você tem 2 itens na sacola
+					Você tem ${carrinhoCompras.quantidade} itens na sacola
 				</title>
 				<g fill="none" fill-rule="evenodd" stroke="#FBFAF9" stroke-linecap="square" stroke-width="2">
 					<path d="m47.550692,23l-18,0l0,-17l18,0l0,17z"/>
@@ -350,388 +206,49 @@
 				</g>
 				<g>
 					<circle cy="14.681157" cx="13.148581" r="9" role="presentation" fill="#FFF"/>
-					<text text-decoration="none" text-anchor="middle" x="13.148581" y="19" class="sacola-contador">2</text>
+					<text text-decoration="none" text-anchor="middle" x="13.148581" y="19" class="sacola-contador">${carrinhoCompras.quantidade}</text>
 				</g>
 			 </svg>
 		</a>
 
 		<a tabindex="2" class="cabecalhoPrincipal-itemNavegacao cabecalhoPrincipal-mostraCategoriasEBusca" href="#navegacaoCabecalho">
-			<img class="cabecalhoPrincipal-iconeItemNavegacao"
-				 src="//cdn.shopify.com/s/files/1/0155/7645/t/232/assets/hamburguer.svg?5355844097266431448"
-				 alt="Abrir navegação por categorias e busca"
-			>
+			<img class="cabecalhoPrincipal-iconeItemNavegacao" src="//cdn.shopify.com/s/files/1/0155/7645/t/232/assets/hamburguer.svg?5355844097266431448" alt="Abrir navegação por categorias e busca">
 		</a>
-
 		<a tabindex="-1" class="cabecalhoPrincipal-itemNavegacao cabecalhoPrincipal-escondeCategoriasEBusca" href="#">
-			<img class="cabecalhoPrincipal-iconeItemNavegacao"
-				 src="//cdn.shopify.com/s/files/1/0155/7645/t/232/assets/hamburguer.svg?5355844097266431448"
-				 alt="Ir para ao topo da página"
-			>
+			<img class="cabecalhoPrincipal-iconeItemNavegacao" src="//cdn.shopify.com/s/files/1/0155/7645/t/232/assets/hamburguer.svg?5355844097266431448" alt="Ir para ao topo da página">
 		</a>
-
 	</div>
 </header>
-
-	<main>
-		<p class="destaqueDoCupom">
-  Use o código <strong class="destaqueDoCupom-codigo"></strong> e tenha <strong class="destaqueDoCupom-desconto">10%</strong> de desconto!
-  <button class="destaqueDoCupom-remover" title="Remover banner" onclick="removeDiscountBanner()"><?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="15px" height="15px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
-<g>
-	<path fill="#ffffff" d="M387.128,170.748L306,251.915l-81.128-81.167l-54.124,54.124L251.915,306l-81.128,81.128l54.085,54.086L306,360.086
-		l81.128,81.128l54.086-54.086L360.086,306l81.128-81.128L387.128,170.748z M522.38,89.62
-		c-119.493-119.493-313.267-119.493-432.76,0c-119.493,119.493-119.493,313.267,0,432.76
-		c119.493,119.493,313.267,119.493,432.76,0C641.873,402.888,641.873,209.113,522.38,89.62z M468.295,468.295
-		c-89.62,89.619-234.932,89.619-324.551,0c-89.62-89.62-89.62-234.932,0-324.551c89.62-89.62,234.931-89.62,324.551,0
-		C557.914,233.363,557.914,378.637,468.295,468.295z"/>
-</g>
-</svg>
-</button>
-</p>
-
-	<section class="vitrineDestacao container">
-		<ul class="vitrineDestacao-lista">
-		  
-			<li class="vitrineDestacao-item vitrineDestacao-itemPrincipal">
-				<a class="vitrineDestacao-itemPrincipal-link" href="/products/livro-certificacao-php">
-
-<div class="imagemLivroNinja vitrineDestacao-item-imagem" role="img">
-	<img class="imagemLivroNinja-principal" class="vitrineDestacao-itemPrincipal-imagem" src="//cdn.shopify.com/s/files/1/0155/7645/products/f7mrqKK-ihQQVJJT3EqE0PoFQk7_7_Hh5YPSj8uFSj8_size_mode_3_size_800x600_large.jpeg?v=1461353863" alt="Livro de Certificação PHP" title="Livro de Certificação PHP">
-	<div class="imagemLivroNinja-tablet" style="" role="presentation">
-		<svg width="181px" viewBox="0 0 181 242" style="width: 100%; height: 1px; padding-bottom: 133.7%; padding-bottom: calc(100%*242/181 - 1px); overflow: visible;" preserveAspectRatio="xMidYMin slice" role="presentation">
-			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-				<path d="M69.1643321,12.5046687 L111.92731,12.5046687 L111.92731,26.1669056 L69.1643321,26.1669056 L69.1643321,12.5046687 Z" id="Fill-63" fill="#B9BBB8"></path>
-				<path d="M174.00728,3.05307652 L6.83436313,3.05307652 C3.25784434,3.05307652 0.332198029,5.97166188 0.332198029,9.53882176 L0.332198029,234.576731 C0.332198029,238.144618 3.25784434,241.063203 6.83436313,241.063203 L174.00728,241.063203 C177.583799,241.063203 180.509445,238.144618 180.509445,234.576731 L180.509445,9.53882176 C180.509445,5.97166188 177.583799,3.05307652 174.00728,3.05307652 L174.00728,3.05307652 Z M85.8370175,19.5175625 L103.403286,19.5175625 C104.367569,19.5175625 105.159111,20.3064676 105.159111,21.2684229 C105.159111,22.2420118 104.367569,23.0200104 103.403286,23.0200104 L85.8370175,23.0200104 C84.8610732,23.0200104 84.0811924,22.2420118 84.0811924,21.2684229 C84.0811924,20.3064676 84.8610732,19.5175625 85.8370175,19.5175625 L85.8370175,19.5175625 Z M77.0484168,19.5175625 C78.0236323,19.5175625 78.8035131,20.3064676 78.8035131,21.2684229 C78.8035131,22.2420118 78.0236323,23.0200104 77.0484168,23.0200104 C76.0834054,23.0200104 75.2925917,22.2420118 75.2925917,21.2684229 C75.2925917,20.3064676 76.0834054,19.5175625 77.0484168,19.5175625 L77.0484168,19.5175625 Z M17.6302458,29.3028943 L163.201193,29.3028943 L163.201193,213.992488 L17.6302458,213.992488 L17.6302458,29.3028943 Z" id="Fill-64" fill="#dfdbd6"></path>
-				<path d="M68.8676858,10.0463386 L111.630664,10.0463386 L111.630664,23.7085755 L68.8676858,23.7085755 L68.8676858,10.0463386 Z" id="Fill-65" fill="#ece9e6"></path>
-				<path d="M173.710634,0.594019308 L6.53771688,0.594019308 C2.96119809,0.594019308 0.0355517791,3.51260466 0.0355517791,7.08049164 L0.0355517791,232.117674 C0.0355517791,235.685561 2.96119809,238.604146 6.53771688,238.604146 L173.710634,238.604146 C177.287153,238.604146 180.212799,235.685561 180.212799,232.117674 L180.212799,7.08049164 C180.212799,3.51260466 177.287153,0.594019308 173.710634,0.594019308 L173.710634,0.594019308 Z M85.5403713,13.316114 L103.10664,13.316114 C104.070922,13.316114 104.862465,14.1057462 104.862465,15.0677014 C104.862465,16.0405632 104.070922,16.8185618 103.10664,16.8185618 L85.5403713,16.8185618 C84.5651558,16.8185618 83.7845462,16.0405632 83.7845462,15.0677014 C83.7845462,14.1057462 84.5651558,13.316114 85.5403713,13.316114 L85.5403713,13.316114 Z M76.7517706,13.316114 C77.726986,13.316114 78.5068668,14.1057462 78.5068668,15.0677014 C78.5068668,16.0405632 77.726986,16.8185618 76.7517706,16.8185618 C75.7867592,16.8185618 74.9959455,16.0405632 74.9959455,15.0677014 C74.9959455,14.1057462 75.7867592,13.316114 76.7517706,13.316114 L76.7517706,13.316114 Z M17.3335996,26.8438371 L162.904547,26.8438371 L162.904547,211.533431 L17.3335996,211.533431 L17.3335996,26.8438371 Z" id="Fill-99" fill="#fbfaf9"></path>
-				<path d="M95.823865,225.577396 C95.823865,228.717747 93.2721242,231.263329 90.1241754,231.263329 C86.9762266,231.263329 84.4244857,228.717747 84.4244857,225.577396 C84.4244857,222.437772 86.9762266,219.892189 90.1241754,219.892189 C93.2721242,219.892189 95.823865,222.437772 95.823865,225.577396" id="Fill-100" fill="#ece9e6"></path>
-				<rect fill="#FFFFFE" x="17" y="27" width="146" height="185"></rect>
-				<image xlink:href="//cdn.shopify.com/s/files/1/0155/7645/products/f7mrqKK-ihQQVJJT3EqE0PoFQk7_7_Hh5YPSj8uFSj8_size_mode_3_size_800x600_large.jpeg?v=1461353863" x="17" y="27" height="185" width="146" preserveAspectRatio="xMidYMin slice" />
-			</g>
-		</svg>
-	</div>
-	<div class="imagemLivroNinja-cel" style="" role="presentation">
-		<svg width="85px" viewBox="0 0 85 170" style="width: 100%; height: 1px; padding-bottom: 200%; padding-bottom: calc(100%*170/85 - 1px); overflow: visible;" preserveAspectRatio="xMidYMin slice" role="presentation">
-			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-				<path d="M80.1653569,2.88154085 L5.01327291,2.88154085 C2.5052637,2.88154085 0.453521213,4.92833153 0.453521213,7.43028773 L0.453521213,164.734331 C0.453521213,167.236287 2.5052637,169.283078 5.01327291,169.283078 L80.1653569,169.283078 C82.6733661,169.283078 84.7258375,167.236287 84.7258375,164.734331 L84.7258375,7.43028773 C84.7258375,4.92833153 82.6733661,2.88154085 80.1653569,2.88154085 L80.1653569,2.88154085 Z M39.3746754,14.4286395 L51.6946055,14.4286395 C52.3709881,14.4286395 52.9263799,14.9819637 52.9263799,15.6567139 C52.9263799,16.3394622 52.3709881,16.8855154 51.6946055,16.8855154 L39.3746754,16.8855154 C38.6902753,16.8855154 38.142901,16.3394622 38.142901,15.6567139 C38.142901,14.9819637 38.6902753,14.4286395 39.3746754,14.4286395 L39.3746754,14.4286395 Z M33.2107016,14.4286395 C33.8943728,14.4286395 34.4417471,14.9819637 34.4417471,15.6567139 C34.4417471,16.3394622 33.8943728,16.8855154 33.2107016,16.8855154 C32.534319,16.8855154 31.9796561,16.3394622 31.9796561,15.6567139 C31.9796561,14.9819637 32.534319,14.4286395 33.2107016,14.4286395 L33.2107016,14.4286395 Z M5.21881159,25.4907615 L79.9532585,25.4907615 L79.9532585,148.197862 L5.21881159,148.197862 L5.21881159,25.4907615 Z" fill="#dfdbd6"></path>
-				<path d="M35.6268744,148.956229 L51.2849859,148.956229 L51.2849859,163.096171 L35.6268744,163.096171 L35.6268744,148.956229 Z" fill="#ece9e6"></path>
-				<path d="M4.90685927,24.0532818 L80.1136078,24.0532818 L80.1136078,146.608418 L4.90685927,146.608418 L4.90685927,24.0532818 Z" fill="#000"></path>
-				<image xlink:href="//cdn.shopify.com/s/files/1/0155/7645/products/f7mrqKK-ihQQVJJT3EqE0PoFQk7_7_Hh5YPSj8uFSj8_size_mode_3_size_800x600_large.jpeg?v=1461353863" x="4.90685927" y="24.0532818" height="122.5551362" width="75.20674853" preserveAspectRatio="xMidYMin slice" />
-				<path d="M80.2630243,0.606440311 L5.11021136,0.606440311 C2.60220216,0.606440311 0.550459668,2.65395809 0.550459668,5.15591429 L0.550459668,162.459231 C0.550459668,164.961914 2.60220216,167.008704 5.11021136,167.008704 L80.2630243,167.008704 C82.7703046,167.008704 84.8227759,164.961914 84.8227759,162.459231 L84.8227759,5.15591429 C84.8227759,2.65395809 82.7703046,0.606440311 80.2630243,0.606440311 L80.2630243,0.606440311 Z M53.0233183,13.3823405 C53.0233183,14.0650888 52.4679266,14.6104149 51.791544,14.6104149 L39.4716139,14.6104149 C38.7879426,14.6104149 38.2405684,14.0650888 38.2405684,13.3823405 C38.2405684,12.7075903 38.7879426,12.1542661 39.4716139,12.1542661 L51.791544,12.1542661 C52.4679266,12.1542661 53.0233183,12.7075903 53.0233183,13.3823405 L53.0233183,13.3823405 Z M34.5386855,13.3823405 C34.5386855,14.0650888 33.9920401,14.6104149 33.3076401,14.6104149 C32.6312574,14.6104149 32.0765946,14.0650888 32.0765946,13.3823405 C32.0765946,12.7075903 32.6312574,12.1542661 33.3076401,12.1542661 C33.9920401,12.1542661 34.5386855,12.7075903 34.5386855,13.3823405 L34.5386855,13.3823405 Z M42.6866178,162.07314 C39.8593677,162.07314 37.5641858,159.78277 37.5641858,156.962343 C37.5641858,154.141917 39.8593677,151.860272 42.6866178,151.860272 C45.5138679,151.860272 47.8017613,154.141917 47.8017613,156.962343 C47.8017613,159.78277 45.5138679,162.07314 42.6866178,162.07314 L42.6866178,162.07314 Z M5.31575004,23.216388 L80.050197,23.216388 L80.050197,145.923489 L5.31575004,145.923489 L5.31575004,23.216388 Z" fill="#fbfaf9"></path>
-			</g>
-		</svg>
-	</div>
-</div>
-<div class="vitrineDestacao-item-info" role="presentation">
-<h2 class="vitrineDestacao-item-nome">
-							Zend Certified Engineer
-						  
-						</h2>
-						<span class="vitrineDestacao-item-maisDetalhes">Mais detalhes</span>
-					</div>
-				</a>
-			</li>
-		  
-			<li class="livroNaVitrine vitrineDestacao-item vitrineDestacao-itemSecundario">
-				<a href="/products/livro-protractor" class="livroNaVitrine-link">
-					<img class="livroNaVitrine-imagem vitrineDestacao-item-imagem"
-						 src="//cdn.shopify.com/s/files/1/0155/7645/products/B-mir_JQ1is69BkwR8g-eBkv0Ky2QKIQVwlVSaAa8x4_large.jpg?v=1478889395"
-						 alt="Livro de Protractor"
-						 title="Livro de Protractor"
-					>
-					<div class="vitrineDestacao-item-info" role="presentation">
-						<h2 class="vitrineDestacao-item-nome livroNaVitrine-nome">
-						  
-							Protractor: Lições sobre testes end-to-end automatizados
-						  
-						</h2>
-						<span class="vitrineDestacao-item-maisDetalhes">Mais detalhes</span>
-					</div>
-				</a>
-			</li>
-			<li class="livroNaVitrine vitrineDestacao-item vitrineDestacao-itemSecundario">
-				<a href="/products/livro-design-paterns-php" class="livroNaVitrine-link">
-					<img class="livroNaVitrine-imagem vitrineDestacao-item-imagem"
-						 src="//cdn.shopify.com/s/files/1/0155/7645/products/cover_755a35d9-dd95-4aff-b5dc-252904532bf7_large.jpg?v=1527274139"
-						 alt="Livro de Design Patterns com PHP 7"
-						 title="Livro de Design Patterns com PHP 7"
-					>
-					<div class="vitrineDestacao-item-info" role="presentation">
-						<h2 class="vitrineDestacao-item-nome livroNaVitrine-nome">
-						  
-							Design Patterns com PHP 7: Desenvolva com as melhores soluções
-						  
-						</h2>
-						<span class="vitrineDestacao-item-maisDetalhes">Mais detalhes</span>
-					</div>
-				</a>
-			</li>
-		  
-		</ul>
-		<section class="vitrineDestacao-categorias">
-			<ul class="vitrineDestacao-categorias-lista">
-					<li class="vitrineDestacao-categorias-categoria vitrineDestacao-categorias-categoria--programacao">
-						<a href="/collections/livros-de-programacao" class="vitrineDestacao-categoria-link">
-							<img src="//cdn.shopify.com/s/files/1/0155/7645/t/232/assets/icon-programacao.svg?5355844097266431448" alt="" class="vitrineDestacao-link-icone">
-							<h3 class="vitrineDestacao-link-titulo vitrineDestacao-link-titulo--programacao">
-								Livros de
-								<strong>Programação</strong>
-							</h3>
+<main>
+		<section class="vitrineDestaquinho container"></section>
+		<section class="vitrineDestaquinho container">
+			<h2 class="vitrineDestaquinho-titulo">Últimos lançamentos</h2>
+			<ul class="vitrineDestaquinho-lista">
+				<c:forEach items = "${produtos}"  var="produto">
+					<li class="livroNaVitrine vitrineDestaquinho-produto">
+						<a href="${s:mvcUrl('PC#detalhe').arg(0,produto.id).build() }" class="livroNaVitrine-link" title="${produto.titulo}">
+							<div class="livroNaVitrine-imagemContainer" role="presentation">
+								<img class="livroNaVitrine-imagem " src="//cdn.shopify.com/s/files/1/0155/7645/products/p_b355be89-5798-4c22-a8c6-cec973fd8c05_large.jpg?v=1543950452" alt="Livro de Zend Expressive" title="${produto.titulo}">
+							</div>
+							<span class="livroNaVitrine-nome">${produto.titulo}</span>
 						</a>
-						<div class="vitrineDestacao-link-subcategorias">
-							
-								<a href="/collections/programacao-logica">Lógica</a>, 
-							
-								<a href="/collections/programacao-java">Java</a>, 
-							
-								<a href="/collections/programacao-net">.NET</a>, 
-							
-								<a href="/collections/programacao-php">PHP</a>, 
-							
-								<a href="/collections/programacao-games">Games</a>, 
-							
-								<a href="/collections/programacao-oo">OO</a>, 
-							
-								<a href="/collections/programacao-funcional">Funcional</a>, 
-							
-								<a href="/collections/programacao-outros">Outros</a>
-							
-						</div>
 					</li>
-					
-					<li class="vitrineDestacao-categorias-categoria vitrineDestacao-categorias-categoria--mobile">
-						<a href="/collections/livros-de-mobile" class="vitrineDestacao-categoria-link">
-							<img src="//cdn.shopify.com/s/files/1/0155/7645/t/232/assets/icon-mobile.svg?5355844097266431448" alt="" class="vitrineDestacao-link-icone">
-							<h3 class="vitrineDestacao-link-titulo vitrineDestacao-link-titulo--mobile">
-								Livros de
-								<strong>Mobile</strong>
-							</h3>
-						</a>
-						<div class="vitrineDestacao-link-subcategorias">
-							
-								<a href="/collections/mobile-ios">iOS</a>, 
-							
-								<a href="/collections/mobile-android">Android</a>, 
-							
-								<a href="/collections/mobile-multiplataforma">Multiplataforma</a>, 
-							
-								<a href="/collections/mobile-outros">Outros</a>
-							
-						</div>
-					</li>
-
-					<li class="vitrineDestacao-categorias-categoria vitrineDestacao-categorias-categoria--front-end">
-						<a href="/collections/livros-de-front-end" class="vitrineDestacao-categoria-link">
-							<img src="//cdn.shopify.com/s/files/1/0155/7645/t/232/assets/icon-front-end.svg?5355844097266431448" alt="" class="vitrineDestacao-link-icone">
-							<h3 class="vitrineDestacao-link-titulo vitrineDestacao-link-titulo--front-end">
-								Livros de
-								<strong>Front-end</strong>
-							</h3>
-						</a>
-						<div class="vitrineDestacao-link-subcategorias">
-							
-								<a href="/collections/front-end-html-e-css">HTML e CSS</a>, 
-							
-								<a href="/collections/front-end-javascript">JavaScript</a>, 
-							
-								<a href="/collections/front-end-outros">Outros</a>
-							
-						</div>
-					</li>
-					
-					<li class="vitrineDestacao-categorias-categoria vitrineDestacao-categorias-categoria--infraestrutura">
-						<a href="/collections/livros-de-infraestrutura" class="vitrineDestacao-categoria-link">
-							<img src="//cdn.shopify.com/s/files/1/0155/7645/t/232/assets/icon-infraestrutura.svg?5355844097266431448" alt="" class="vitrineDestacao-link-icone">
-							<h3 class="vitrineDestacao-link-titulo vitrineDestacao-link-titulo--infraestrutura">
-								Livros de
-								<strong>Infraestrutura</strong>
-							</h3>
-						</a>
-						<div class="vitrineDestacao-link-subcategorias">
-							
-								<a href="/collections/infraestrutura-web">Web</a>, 
-							
-								<a href="/collections/infraestrutura-dados">Dados</a>, 
-							
-								<a href="/collections/infraestrutura-outros">Outros</a>
-							
-						</div>
-					</li>
-					
-					<li class="vitrineDestacao-categorias-categoria vitrineDestacao-categorias-categoria--business">
-						<a href="/collections/livros-de-business" class="vitrineDestacao-categoria-link">
-							<img src="//cdn.shopify.com/s/files/1/0155/7645/t/232/assets/icon-business.svg?5355844097266431448" alt="" class="vitrineDestacao-link-icone">
-							<h3 class="vitrineDestacao-link-titulo vitrineDestacao-link-titulo--business">
-								Livros de
-								<strong>Business</strong>
-							</h3>
-						</a>
-						<div class="vitrineDestacao-link-subcategorias">
-							
-								<a href="/collections/business-startups">Startups</a>, 
-							
-								<a href="/collections/business-marketing-digital">Marketing Digital</a>, 
-							
-								<a href="/collections/business-gestao">Gestão</a>, 
-							
-								<a href="/collections/business-agile">Agile</a>, 
-							
-								<a href="/collections/business-outros">Outros</a>
-							
-						</div>
-					</li>
-					
-					<li class="vitrineDestacao-categorias-categoria vitrineDestacao-categorias-categoria--design-e-ux">
-						<a href="/collections/design-e-ux" class="vitrineDestacao-categoria-link">
-							<img src="//cdn.shopify.com/s/files/1/0155/7645/t/232/assets/icon-design-e-ux.svg?5355844097266431448" alt="" class="vitrineDestacao-link-icone">
-							<h3 class="vitrineDestacao-link-titulo vitrineDestacao-link-titulo--design-e-ux">
-								Livros de
-								<strong>Design & UX</strong>
-							</h3>
-						</a>
-						<div class="vitrineDestacao-link-subcategorias">
-							
-								<a href="/collections/design-e-ux">UX</a>, 
-							
-								<a href="/collections/design-e-ux">Photoshop</a>, 
-							
-								<a href="/collections/design-e-ux">Lightroom</a>
-							
-						</div>
-					</li>
-
-				
+				</c:forEach>
 			</ul>
 		</section>
-	</section>
-	
-	<section class="vitrineDestaquinho container">
-		<h2 class="vitrineDestaquinho-titulo">Últimos lançamentos</h2>
-		<ul class="vitrineDestaquinho-lista">
-			<c:forEach items = "${produtos}"  var="produto">
-				<li class="livroNaVitrine vitrineDestaquinho-produto">
-					<a href="${s:mvcUrl('PC#detalhe').arg(0,produto.id).build() }" class="livroNaVitrine-link" title="${produto.titulo}">
-						<div class="livroNaVitrine-imagemContainer" role="presentation">
-							<img class="livroNaVitrine-imagem " src="//cdn.shopify.com/s/files/1/0155/7645/products/p_b355be89-5798-4c22-a8c6-cec973fd8c05_large.jpg?v=1543950452" alt="Livro de Zend Expressive" title="${produto.titulo}">
-						</div>
-						<span class="livroNaVitrine-nome">${produto.titulo}</span>
-					</a>
-				</li>
-			</c:forEach>
-		</ul>
-	</section>
-
-	
-	<section class="vitrineDestaquinho container">
-	<h2 class="vitrineDestaquinho-titulo">Últimos atualizados</h2>
-	<ul class="vitrineDestaquinho-lista">
 		
-		<li class="livroNaVitrine vitrineDestaquinho-produto">
-			<a href="/products/livro-rust-funcional-concorrente" class="livroNaVitrine-link" title="Programação Funcional e Concorrente em Rust">
-				<div class="livroNaVitrine-imagemContainer" role="presentation">
-					<img class="livroNaVitrine-imagem " src="//cdn.shopify.com/s/files/1/0155/7645/products/fjRCXKbPMIcdYdC5HjX_nh6yUyQwwxV6aIOE7G_nYS4_large.jpg?v=1519941170" alt="Livro de Rust Funcional e Concorrente" title="Livro de Rust Funcional e Concorrente">
-				</div>
-				<span class="livroNaVitrine-nome">Rust Funcional e Concorrente</span>
-			</a>
-		</li>
-		
-		<li class="livroNaVitrine vitrineDestaquinho-produto">
-			<a href="/products/livro-algoritmos-java" class="livroNaVitrine-link" title="Algoritmos em Java: Busca, ordenação e análise">
-	<div class="livroNaVitrine-imagemContainer" role="presentation">
-		<img class="livroNaVitrine-imagem " src="//cdn.shopify.com/s/files/1/0155/7645/products/eBook-Algoritmos_large.jpg?v=1484936519" alt="Livro de Algoritmos em Java" title="Livro de Algoritmos em Java">
-		
-	</div>
-	<span class="livroNaVitrine-nome">
-		
-	Algoritmos em Java
-
-	</span>
-</a>
-		</li>
-		
-		<li class="livroNaVitrine vitrineDestaquinho-produto">
-			<a href="/products/livro-aprendendo-computacao-ruby" class="livroNaVitrine-link" title="Introdução à Computação: Da Lógica aos jogos com Ruby">
-	<div class="livroNaVitrine-imagemContainer" role="presentation">
-		<img class="livroNaVitrine-imagem " src="//cdn.shopify.com/s/files/1/0155/7645/products/introducao-ruby-featured_9c39896f-ea67-4389-9f96-43a7a4de2b64_large.png?v=1432680156" alt="Livro de Introdu&#231;&#227;o a Computa&#231;&#227;o com Ruby" title="Livro de Introdu&#231;&#227;o a Computa&#231;&#227;o com Ruby">
-		
-	</div>
-	<span class="livroNaVitrine-nome">
-		
-	Computa&#231;&#227;o com Ruby
-
-	</span>
-</a>
-		</li>
-		
-		<li class="livroNaVitrine vitrineDestaquinho-produto">
-			<a href="/products/livro-zend-expressive-php7" class="livroNaVitrine-link" title="Zend Expressive e PHP 7: Uma união poderosa para a criação de APIs">
-	<div class="livroNaVitrine-imagemContainer" role="presentation">
-		<img class="livroNaVitrine-imagem " src="//cdn.shopify.com/s/files/1/0155/7645/products/p_b355be89-5798-4c22-a8c6-cec973fd8c05_large.jpg?v=1543950452" alt="Livro de Zend Expressive" title="Livro de Zend Expressive">
-		
-	</div>
-	<span class="livroNaVitrine-nome">
-		
-	Zend Expressive e PHP 7
-
-	</span>
-</a>
-		</li>
-		
-		<li class="livroNaVitrine vitrineDestaquinho-produto">
-			<a href="/products/livro-refatoracao-java" class="livroNaVitrine-link" title="Refatorando com padrões de projeto: Um guia em Java">
-	<div class="livroNaVitrine-imagemContainer" role="presentation">
-		<img class="livroNaVitrine-imagem " src="//cdn.shopify.com/s/files/1/0155/7645/products/Amazon-Refatoracao-Java_large.jpg?v=1509072714" alt="Livro de Refatoração Java" title="Livro de Refatoração Java">
-		
-	</div>
-	<span class="livroNaVitrine-nome">
-		
-	Refatoração Java
-
-	</span>
-</a>
-		</li>
-		
-		
-	</ul>
-</section>
-
-
-
-
-
-
-
-
-
-		<div class="buscaDoRodape container" role="presentation">
-	<form role="search"
-		  aria-labelledby="rotuloBuscaDoRodape"
-		  action="/search"
-		  method="GET"
-		  class="buscaDoRodape-formulario"
-	>
-		<label id="rotuloBuscaRodape" class="buscaDoRodape-rotuloEscondido" for="campoBuscaRodape">Busque por autor, título, conteúdo...</label>
-		<label class="buscaDoRodape-rotulo" for="campoBuscaRodape">Não encontrou o seu livro?</label>
-		<fieldset class="buscaDoRodape-fieldset">
-			<input type="hidden" name="type" value="product">
-			<input id="campoBuscaRodape"
-				   class="buscaDoRodape-campo"
-				   placeholder="Busque por autor, título, conteúdo..."
-				   type="search"
-				   name="q"
-				   required
-				   aria-required
-			>
-			<button class="buscaDoRodape-enviar" type="submit">
-				Buscar
-			</button>
-		</fieldset>
-	</form>
-</div>
-	</main>
+	    <div class="buscaDoRodape container" role="presentation">
+		<form role="search" aria-labelledby="rotuloBuscaDoRodape" action="/search" method="GET" class="buscaDoRodape-formulario">
+			<label id="rotuloBuscaRodape" class="buscaDoRodape-rotuloEscondido" for="campoBuscaRodape">Busque por autor, título, conteúdo...</label>
+			<label class="buscaDoRodape-rotulo" for="campoBuscaRodape">Não encontrou o seu livro?</label>
+			<fieldset class="buscaDoRodape-fieldset">
+				<input type="hidden" name="type" value="product">
+				<input id="campoBuscaRodape" class="buscaDoRodape-campo" placeholder="Busque por autor, título, conteúdo..." type="search" name="q" required aria-required>
+				<button class="buscaDoRodape-enviar" type="submit"> Buscar</button>
+			</fieldset>
+		</form>
+		</div>
+</main>
 	<footer class="rodape">
 	<div class="container" role="presentation">
 		<div class="rodape-conteudo" role="presentation">
