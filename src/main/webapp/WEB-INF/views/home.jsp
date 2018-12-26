@@ -4,6 +4,7 @@
 <%@ taglib uri= "http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib uri= "http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri= "http://www.springframework.org/tags" prefix="s" %>
+<%@ taglib uri= "http://www.springframework.org/security/tags" prefix="security" %>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -41,7 +42,7 @@
 <body>
 	<header role="banner" class="cabecalhoPrincipal container">
 	<h1 class="cabecalhoPrincipal-titulo">
-		<a tabindex="1" href="/" class="cabecalhoPrincipal-linkTitulo">
+		<a tabindex="1" href="${s:mvcUrl('HC#index').build()}" class="cabecalhoPrincipal-linkTitulo">
 			<svg class="logo" role="img" aria-labelledby="altLogo"  x="0px" y="0px" viewBox="0 0 208.769 70" enable-background="new 0 0 208.769 70" xml:space="preserve">
 				<title id="altLogo">Casa do Código - Livros e Tecnologia</title>
 				<rect id="back" fill="#FFFFFF" width="65" height="70"/>
@@ -155,36 +156,20 @@
 	<div id="navegacaoCabecalho" class="cabecalhoPrincipal-navegacao">
 		<div class="cabecalhoPrincipal-categoriasEBusca" role="presentation">
 			<nav role="navigation" aria-label="Categorias de livros" class="colecoesDaCDC">
+				<security:authorize access="isAuthenticated()">
 					<li class="colecoesDaCDC-colecaoItem">
-						<a href="#" class="colecoesDaCDC-colecaoLink colecoesDaCDC-colecaoLink--comSubColecao">
-							Programação
-						</a>
+						<a href="${s:mvcUrl('PC#listar').build()}" class="colecoesDaCDC-colecaoLink"> Listar Produtos</a>
 					</li>
-
 					<li class="colecoesDaCDC-colecaoItem">
-						<a href="#" class="colecoesDaCDC-colecaoLink colecoesDaCDC-colecaoLink--comSubColecao">
-							Mobile
-						</a>
+						<a href="${s:mvcUrl('PC#form').build()}" class="colecoesDaCDC-colecaoLink ">Cadastrar Produto</a>						
 					</li>
-
-					<li class="colecoesDaCDC-colecaoItem">
-						<a href="#" class="colecoesDaCDC-colecaoLink colecoesDaCDC-colecaoLink--comSubColecao">
-							Front-end
-						</a>
-						
-					</li>
-			
-					<li class="colecoesDaCDC-colecaoItem">
-						<a href="${s:mvcUrl('PC#listar').build()}" class="colecoesDaCDC-colecaoLink">
-							Listar Produtos
-						</a>
-					</li>
-					
-					<li class="colecoesDaCDC-colecaoItem">
-						<a href="${s:mvcUrl('PC#form').build()}" class="colecoesDaCDC-colecaoLink ">
-							Cadastrar Produto
-						</a>
-					</li>
+				</security:authorize>
+				<li class="colecoesDaCDC-colecaoItem">
+					<a href="#" class="colecoesDaCDC-colecaoLink">
+					<security:authentication property="principal" var="usuario"/>
+						Login: ${usuario.username}
+					</a>
+				</li>
 			</nav>
 			<form role="search" aria-labelledby="rotuloBuscaPrincipal" action="/search" method="GET" class="buscaPrincipal">
 				<label id="rotuloBuscaPrincipal" class="buscaPrincipal-label" for="campoBuscaPrincipal">

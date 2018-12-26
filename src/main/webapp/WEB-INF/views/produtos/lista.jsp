@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>	
 <%@ taglib uri= "http://www.springframework.org/tags" prefix="s" %>
+<%@ taglib uri= "http://www.springframework.org/security/tags" prefix="security" %>
 
 <!DOCTYPE html>
 <html>
@@ -22,11 +23,13 @@
 			  </button>
 			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			    <div class="navbar-nav">
-			      <a class="nav-item nav-link active" href="${s:mvcUrl('PC#listar').build()}">Listar Produto <span class="sr-only">(current)</span></a>
-			      <a class="nav-item nav-link" href="${s:mvcUrl('PC#form').build()}">Cadastrar Produto</a>
-			      <a class="nav-item nav-link" href="#">Pricing</a>
-			      <a class="nav-item nav-link disabled" href="#">Disabled</a>
-			    </div>
+			      	<a class="nav-item nav-link active" href="${s:mvcUrl('PC#listar').build()}">Listar Produto <span class="sr-only">(current)</span></a>
+			      	<a class="nav-item nav-link" href="${s:mvcUrl('PC#form').build()}">Cadastrar Produto</a>
+				 	<a class="nav-item nav-link nav navbar-nav navbar-right" href="#"> 
+				 		<security:authentication property="principal" var="usuario" /> 
+				 			Login: ${usuario.username}
+					</a>
+				</div>
 			  </div>
 		  </div>
 		</nav>
