@@ -162,6 +162,16 @@
 						<a href="${s:mvcUrl('PC#form').build()}" class="colecoesDaCDC-colecaoLink "><fmt:message key="cabecalho.menu.cadastrarProdutos"/></a>						
 					</li>
 				</security:authorize>
+				<li class="colecoesDaCDC-colecaoItem">
+					<a href="?locale=pt" class="colecoesDaCDC-colecaoLink ">
+					   <fmt:message key="cabecalho.menu.pt"/>
+					</a>						
+				</li>
+				<li class="colecoesDaCDC-colecaoItem">
+					<a href="?locale=en_US" class="colecoesDaCDC-colecaoLink ">
+					   <fmt:message key="cabecalho.menu.en"/>
+					</a>						
+				</li>
 			</nav>
 			<form role="search" aria-labelledby="rotuloBuscaPrincipal" action="/search" method="GET" class="buscaPrincipal">
 				<label id="rotuloBuscaPrincipal" class="buscaPrincipal-label" for="campoBuscaPrincipal">
