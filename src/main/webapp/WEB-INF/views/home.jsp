@@ -164,12 +164,6 @@
 						<a href="${s:mvcUrl('PC#form').build()}" class="colecoesDaCDC-colecaoLink ">Cadastrar Produto</a>						
 					</li>
 				</security:authorize>
-				<li class="colecoesDaCDC-colecaoItem">
-					<a href="#" class="colecoesDaCDC-colecaoLink">
-					<security:authentication property="principal" var="usuario"/>
-						Login: ${usuario.username}
-					</a>
-				</li>
 			</nav>
 			<form role="search" aria-labelledby="rotuloBuscaPrincipal" action="/search" method="GET" class="buscaPrincipal">
 				<label id="rotuloBuscaPrincipal" class="buscaPrincipal-label" for="campoBuscaPrincipal">

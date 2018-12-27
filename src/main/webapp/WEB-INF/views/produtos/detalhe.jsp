@@ -410,35 +410,10 @@
 				</c:forEach>
 			</ul>
 			<button type="submit" class="adicionarAoCarrinho-botaoComprar" alt="Compre Agora" title="Compre Agora${produto.titulo}">
-			COMPRA 2</button>
+			COMPRAR</button>
+			<input type="hidden" name="${_csrf.parameterName }" value="${_csrf.token }" />
 		</form>
-		
-		<!-- 
 
-		<form action='<c:url value="/carrinho/add" />' method="POST" class="adicionarAoCarrinho">
-		<ul class="adicionarAoCarrinho-listaOfertas">
-		 <input type="hidden" value="${preco.tipo}"/>
-			<c:forEach items="${produto.precos}" var="preco">
-				<li class="adicionarAoCarrinho-oferta"  >
-					<label class="adicionarAoCarrinho-infosDaOferta">
-						<span class="adicionarAoCarrinho-tipoDaOferta" role="presentation">
-							<span class="adicionarAoCarrinho-tipoDaOferta-nome">${preco.tipo}</span>
-						</span>
-						<p class="adicionarAoCarrinho-preco">
-							<span class="adicionarAoCarrinho-preco-valor" itemprop="price">${preco.valor}</span>
-							<a class="adicionarAoCarrinho-preco-frete" href="https://www.casadocodigo.com.br/pages/fretes" rel="nofollow">
-									+ frete
-							</a>
-						</p>
-					</label>
-					<button class="adicionarAoCarrinho-botaoComprar" type="submit" name="produtoId" value="${produto.id}"  title="${preco.tipo}">
-							Comprar
-					</button>
-				</li>
-			</c:forEach>
-		</ul>
-	</form> -->
-		
 	<section class="conteudoDoLivro infoSection" itemprop="description">
 			<h2 class="infoSection-titulo">Conteúdo</h2>
 			<p class="infoSection-texto"> ${produto.descricao}</p>

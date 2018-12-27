@@ -390,9 +390,9 @@
 		<tfoot class="formularioDoCarrinho-rodape">
 			<tr>
 				<td class="formularioDoCarrinho-rodape-item formularioDoCarrinho-finalizar" colspan="3">
-					<form action="${s:mvcUrl('PC#finalizar').build()}" method="post">
+					<form:form servletRelativeAction="${s:mvcUrl('PC#finalizar').build()}" method="post">
 						<button class="formularioDoCarrinho-finalizar-botao" type="submit" name="checkout">Finalizar<span class="formularioDoCarrinho-finalizar-botao-texto" role="presentation"> compra</span></button>
-					</form>
+					</form:form>
 				</td>
 				<td class="formularioDoCarrinho-rodape-item">
 					<button class="formularioDoCarrinho-atualizar" type="submit" class="update-cart" name="update">Atualizar</button>

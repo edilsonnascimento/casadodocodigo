@@ -29,6 +29,9 @@
 				 		<security:authentication property="principal" var="usuario" /> 
 				 			Login: ${usuario.username}
 					</a>
+					<a href="${s:mvcUrl('LC#loginForm').build()}" class="nav-item nav-link nav navbar-nav navbar-right" > 
+				 		Sair
+					</a>
 				</div>
 			  </div>
 		  </div>
