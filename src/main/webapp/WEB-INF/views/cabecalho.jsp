@@ -42,7 +42,7 @@
 	<h1 class="cabecalhoPrincipal-titulo">
 		<a tabindex="1" href="${s:mvcUrl('HC#index').build()}" class="cabecalhoPrincipal-linkTitulo">
 			<svg class="logo" role="img" aria-labelledby="altLogo"  x="0px" y="0px" viewBox="0 0 208.769 70" enable-background="new 0 0 208.769 70" xml:space="preserve">
-				<title id="altLogo">Casa do Código - Livros e Tecnologia</title>
+				<title id="altLogo"><s:message code="cabecalho.menu.titulo.principal"/></title>
 				<rect id="back" fill="#FFFFFF" width="65" height="70"/>
 				<g id="symbol">
 					<polygon fill="#F9C45B" points="24.51,22.881 24.51,29.806 24.51,40.193 24.51,47.118 31.435,47.118 47.151,47.118 47.151,40.32 
@@ -156,26 +156,28 @@
 			<nav role="navigation" aria-label="Categorias de livros" class="colecoesDaCDC">
 				<security:authorize access="isAuthenticated()">
 					<li class="colecoesDaCDC-colecaoItem">
-						<a href="${s:mvcUrl('PC#listar').build()}" class="colecoesDaCDC-colecaoLink"> Listar Produtos</a>
+						<a href="${s:mvcUrl('PC#listar').build()}" class="colecoesDaCDC-colecaoLink"><fmt:message key="cabecalho.menu.listarProdutos"/></a>
 					</li>
 					<li class="colecoesDaCDC-colecaoItem">
-						<a href="${s:mvcUrl('PC#form').build()}" class="colecoesDaCDC-colecaoLink ">Cadastrar Produto</a>						
+						<a href="${s:mvcUrl('PC#form').build()}" class="colecoesDaCDC-colecaoLink "><fmt:message key="cabecalho.menu.cadastrarProdutos"/></a>						
 					</li>
 				</security:authorize>
 			</nav>
 			<form role="search" aria-labelledby="rotuloBuscaPrincipal" action="/search" method="GET" class="buscaPrincipal">
 				<label id="rotuloBuscaPrincipal" class="buscaPrincipal-label" for="campoBuscaPrincipal">
-					Busque por autor, título, conteúdo...
+					<fmt:message key="cabecalho.busca"/>
 				</label>
 				<input type="hidden" name="type" value="product">
-				<input id="campoBuscaPrincipal" class="buscaPrincipal-campo" placeholder="O que procura?" type="search" name="q" required aria-required>
+				<input id="campoBuscaPrincipal" class="buscaPrincipal-campo" placeholder="<fmt:message key="cabecalho.cambo.buscar"/>" type="search" name="q" required aria-required>
 			    <button class="buscaPrincipal-submit" type="submit" title="buscar"></button>
 			</form>
 		</div>
 		<a tabindex="3" href="/cart" title="Ir para sacola de compras" class="sacola cabecalhoPrincipal-itemNavegacao">
 			<svg width="60px" height="24px" viewBox="0 0 60 24" role="img" aria-labelledby="sacolaLabel" class="sacola-icone">
 				<title id="sacolaLabel">
-					Você tem ${carrinhoCompras.quantidade} itens na sacola
+					<fmt:message key="cabecalho.itens.sacola"> 
+						<fmt:param value="${carrinhoCompras.quantidade}"/>
+					</fmt:message>
 				</title>
 				<g fill="none" fill-rule="evenodd" stroke="#FBFAF9" stroke-linecap="square" stroke-width="2">
 					<path d="m47.550692,23l-18,0l0,-17l18,0l0,17z"/>

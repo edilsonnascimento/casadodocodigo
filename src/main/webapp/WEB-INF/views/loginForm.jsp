@@ -2,7 +2,6 @@
 <head>
 	<c:url value="/resources/css" var="cssPath"/>
 	<link rel="stylesheet" href="${cssPath}/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    	</style>
 </head>
 
 <body>
