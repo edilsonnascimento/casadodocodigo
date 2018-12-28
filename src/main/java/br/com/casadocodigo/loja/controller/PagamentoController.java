@@ -4,6 +4,9 @@ import java.util.concurrent.Callable;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
+import org.springframework.mail.MailSender;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,6 +18,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import br.com.casadocodigo.loja.models.CarrinhoCompras;
 import br.com.casadocodigo.loja.models.DadosPagamento;
+import br.com.casadocodigo.loja.models.Usuario;
 
 @Controller
 @RequestMapping("/pagmento")
@@ -26,9 +30,12 @@ public class PagamentoController {
 
 	@Autowired
 	private RestTemplate restTemplate;
+	
+	@Autowired
+	private MailSender sender;
 
 	@RequestMapping(value="finalizar", method=RequestMethod.POST)
-	public Callable<ModelAndView> finalizar(RedirectAttributes model) {
+	public Callable<ModelAndView> finalizar(@AuthenticationPrincipal Usuario usuario, RedirectAttributes model) {
 
 		return () -> {
 
@@ -36,6 +43,9 @@ public class PagamentoController {
 			try {
 				String response = restTemplate.postForObject(uri, new DadosPagamento(carrinho.getTotal()), String.class);
 				model.addFlashAttribute("sucesso", response);
+				
+				//enviaEmailCompraProduto(usuario);
+				
 				return new ModelAndView("redirect:/produtos");
 
 			} catch (HttpClientErrorException e) {
@@ -44,6 +54,17 @@ public class PagamentoController {
 				return new ModelAndView("redirect:/produtos");
 			}
 		};
+	}
+
+	private void enviaEmailCompraProduto(Usuario usuario) {
+		SimpleMailMessage email = new SimpleMailMessage();
+		
+		email.setFrom("edilsonjoper@gmail.com");
+		email.setTo("edilsonjoper@gmail.com");
+		email.setSubject("Compra finalizada com sucesso!");
+		email.setText("Compra aprovada com sucesso no valor de " + carrinho.getTotal());
+		
+		sender.send(email);
 	}
 
 }
