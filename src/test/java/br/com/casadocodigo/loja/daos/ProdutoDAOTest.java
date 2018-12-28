@@ -5,17 +5,27 @@ import java.util.List;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 import br.com.casadocodigo.loja.builders.ProdutoBuilder;
+import br.com.casadocodigo.loja.conf.JPAConfiguration;
 import br.com.casadocodigo.loja.models.Produto;
 import br.com.casadocodigo.loja.models.TipoPreco;
 
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes= {JPAConfiguration.class, ProdutoDAO.class})
 public class ProdutoDAOTest {
 	
+	@Autowired
+	ProdutoDAO produtoDAO = new ProdutoDAO();
+	
 	@Test
+	@Transactional
 	public void deveSomarTodosOsPrecosPorTipoLivro() {
-	    ProdutoDAO produtoDAO = new ProdutoDAO();
-
 	    List<Produto> livrosImpressos = ProdutoBuilder.newProduto(TipoPreco.IMPRESSO, BigDecimal.TEN).more(3).buildAll();
 	    List<Produto> livrosEbook = ProdutoBuilder.newProduto(TipoPreco.EBOOK, BigDecimal.TEN).more(3).buildAll();
 
