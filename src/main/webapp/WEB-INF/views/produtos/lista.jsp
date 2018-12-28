@@ -1,4 +1,6 @@
 <%@ include file="/WEB-INF/views/cabecalho.jsp" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <head>
 	<c:url value="/resources/css" var="cssPath"/>
 	<link rel="stylesheet" href="${cssPath}/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -13,8 +15,9 @@
 		<table class="table table-bordered table-striped table-hover">
 			<tr>
 				<th>Titulo</th>
-				<th>Descrição</th>
-				<th>Páginas</th>
+				<th>DescriÃ§Ã£o</th>
+				<th>PreÃ§os> </th>
+				<th>PÃ¡ginas</th>
 			</tr>
 			<c:forEach items="${produtos}" var="produto">
 				<tr>
@@ -22,7 +25,8 @@
 						<a href="${s:mvcUrl('PC#detalhe').arg(0, produto.id).build()}">${produto.titulo}</a>
 					</td>
 					<td>${produto.descricao}</td>
-					<td>${produto.paginas}</td>
+					<td>${produto.precos}</td>
+					<td>${produto.paginas }
 				</tr>
 			</c:forEach>
 			

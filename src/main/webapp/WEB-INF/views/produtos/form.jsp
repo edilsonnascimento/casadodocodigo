@@ -1,5 +1,10 @@
 <%@ include file="/WEB-INF/views/cabecalho.jsp" %>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
 <head>
+    <meta charset="UTF-8" />
 	<c:url value="/resources/css" var="cssPath"/>
 	<link rel="stylesheet" href="${cssPath}/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
@@ -7,23 +12,23 @@
 	<div class="container">
 		<form:form action = "${s:mvcUrl('PC#gravar').build()}" method="post" commandName="produto" enctype="multipart/form-data">
 		  <div class="form-group">
-				<label>TÌtulo</label> 
+				<label>T√≠tulo</label> 
 				<form:input path="titulo" cssClass="form-control" />
 				<form:errors path="titulo"/>
 			</div>
 			<div class="form-group">
-				<label>DescriÁ„o</label>
+				<label>Descri√ß√£o</label>
 				<form:textarea path="descricao" cssClass="form-control"/>
 				<form:errors path="descricao"/>
 			</div>
 			
 			<div "form-group">
-				<label>P·ginas</label> 
+				<label>P√°ginas</label> 
 				<form:input path="paginas" cssClass="form-control" />
 				<form:errors path="paginas"/>
 			</div>
 			<div>
-				<label >Data de LanÁamento</label> 
+				<label >Data de Lan√ßamento</label> 
 				<form:input path="dataLancamento" cssClass="form-control" />
 				<form:errors path="dataLancamento"/>
 			</div>
@@ -37,7 +42,7 @@
 			</c:forEach>
 			
 			<div "form-group">
-				<label>Sum·rio</label>
+				<label>Sum√°rio</label>
 				<input name="sumario" type="file" class="form-control"/>
 			</div>
 	

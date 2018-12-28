@@ -8,7 +8,7 @@
 
 <!DOCTYPE html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="//cdn.shopify.com/s/files/1/0155/7645/t/232/assets/favicon.png?5355844097266431448" type="image/png"/>
@@ -37,6 +37,7 @@
 	
 	<link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0155/7645/t/232/assets/style.css?5355844097266431448">
 	<link rel="canonical" href="https://www.casadocodigo.com.br/">
+
 </head>
 <header role="banner" class="cabecalhoPrincipal container">
 	<h1 class="cabecalhoPrincipal-titulo">

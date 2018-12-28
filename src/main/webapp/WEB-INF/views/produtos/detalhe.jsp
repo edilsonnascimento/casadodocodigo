@@ -1,4 +1,8 @@
 <%@ include file="/WEB-INF/views/cabecalho.jsp" %>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
 <article id="${produto.id }" >
 	<header class="cabecalhoProdutoLivro container">
 	<div class="cabecalhoProdutoLivro-tituloEAutor">

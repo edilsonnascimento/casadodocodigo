@@ -56,6 +56,7 @@ public class PagamentoController {
 		};
 	}
 
+	@SuppressWarnings("unused")
 	private void enviaEmailCompraProduto(Usuario usuario) {
 		SimpleMailMessage email = new SimpleMailMessage();
 		

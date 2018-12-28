@@ -1,7 +1,9 @@
 <%@ include file="/WEB-INF/views/cabecalho.jsp" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 
 <section class="vitrineDestaquinho container">
-	<h2 class="vitrineDestaquinho-titulo">Últimos lançamentos</h2>
+	<h2 class="vitrineDestaquinho-titulo">Ãšltimos lanÃ§amentos</h2>
 	<ul class="vitrineDestaquinho-lista">
 		<c:forEach items = "${produtos}"  var="produto">
 			<li class="livroNaVitrine vitrineDestaquinho-produto">
