@@ -161,6 +161,11 @@
 					<li class="colecoesDaCDC-colecaoItem">
 						<a href="${s:mvcUrl('PC#form').build()}" class="colecoesDaCDC-colecaoLink "><fmt:message key="cabecalho.menu.cadastrarProdutos"/></a>						
 					</li>
+					<li class="colecoesDaCDC-colecaoItem">
+					<a href="${s:mvcUrl('LC#logout').build()}" class="colecoesDaCDC-colecaoLink ">
+					   <fmt:message key="cabecalho.menu.logout"/>
+					</a>						
+				</li>
 				</security:authorize>
 				<li class="colecoesDaCDC-colecaoItem">
 					<a href="?locale=pt" class="colecoesDaCDC-colecaoLink ">
@@ -170,6 +175,11 @@
 				<li class="colecoesDaCDC-colecaoItem">
 					<a href="?locale=en_US" class="colecoesDaCDC-colecaoLink ">
 					   <fmt:message key="cabecalho.menu.en"/>
+					</a>						
+				</li>
+				<li class="colecoesDaCDC-colecaoItem">
+					<a href="${s:mvcUrl('LC#loginForm').build()}" class="colecoesDaCDC-colecaoLink ">
+					   <fmt:message key="cabecalho.menu.login"/>
 					</a>						
 				</li>
 			</nav>
