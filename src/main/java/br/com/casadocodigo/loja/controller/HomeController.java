@@ -26,6 +26,7 @@ public class HomeController{
 	private ProdutoDAO produtoDao;
     @Autowired 	  
 	private UsuarioDAO usuarioDao;
+    
 	@RequestMapping("/")
 	@Cacheable(value="produtosHome")
 	public ModelAndView index() {
@@ -36,11 +37,12 @@ public class HomeController{
 		return modelAndView;
 	}
 	
+	@Transactional
 	@ResponseBody
 	@RequestMapping("/url-magica-maluca-alsjoairaporiahpgohgoj0ewr1a189weeio")
-	
 	public String urlMagicaMaluca() {
 		Usuario usuario = new Usuario();
+		
 		usuario.setNome("Admin");
 		usuario.setEmail("admin@casadocodigo.com.br");
 		usuario.setSenha("$2a$10$lt7pS7Kxxe5JfP.vjLNSyOXP11eHgh7RoPxo5fvvbMCZkCUss2DGu");
